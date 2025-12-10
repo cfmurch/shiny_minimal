@@ -5,3 +5,4 @@ COPY app.R /srv/shiny-server/
 
 # ShinyProxy requires the app to start manually:
 CMD ["R", "-e", "shiny::runApp('/home/app', host='0.0.0.0', port=3838)"]
+
